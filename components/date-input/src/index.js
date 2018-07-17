@@ -126,15 +126,15 @@ const DateInput = ({
     <StyledList>
       <Label>
         <LabelText>Day</LabelText>
-        <StyledInput name={day} errorText={errorText} type="text" />
+        <StyledInput name={day} errorText={errorText} type="number" />
       </Label>
       <Label>
         <LabelText>Month</LabelText>
-        <StyledInput name={month} errorText={errorText} type="text" />
+        <StyledInput name={month} errorText={errorText} type="number" />
       </Label>
       <Label className="year">
         <LabelText>Year</LabelText>
-        <StyledInput name={year} errorText={errorText} type="text" />
+        <StyledInput name={year} errorText={errorText} type="number" />
       </Label>
     </StyledList>
   </StyledContainer>

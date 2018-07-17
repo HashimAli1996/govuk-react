@@ -260,12 +260,12 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
                     <Styled(input)
                       errorText="example"
                       name="dayInputName"
-                      type="text"
+                      type="number"
                     >
                       <input
                         className="emotion-9"
                         name="dayInputName"
-                        type="text"
+                        type="number"
                       />
                     </Styled(input)>
                   </label>
@@ -300,12 +300,12 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
                     <Styled(input)
                       errorText="example"
                       name="dateInputMonth"
-                      type="text"
+                      type="number"
                     >
                       <input
                         className="emotion-9"
                         name="dateInputMonth"
-                        type="text"
+                        type="number"
                       />
                     </Styled(input)>
                   </label>
@@ -342,12 +342,12 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
                     <Styled(input)
                       errorText="example"
                       name="dateInputYear"
-                      type="text"
+                      type="number"
                     >
                       <input
                         className="emotion-9"
                         name="dateInputYear"
-                        type="text"
+                        type="number"
                       />
                     </Styled(input)>
                   </label>
