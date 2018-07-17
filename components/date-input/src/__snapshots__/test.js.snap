@@ -312,17 +312,15 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
                 </Styled(label)>
               </Label>
             </Styled(Label)>
-            <Styled(Label)
-              className="year"
-            >
+            <Styled(Label)>
               <Label
-                className="year emotion-1"
+                className="emotion-1"
               >
                 <Styled(label)
-                  className="year emotion-1"
+                  className="emotion-1"
                 >
                   <label
-                    className="year emotion-10"
+                    className="emotion-10"
                   >
                     <Styled(LabelText)>
                       <LabelText

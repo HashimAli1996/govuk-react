@@ -132,7 +132,7 @@ const DateInput = ({
         <LabelText>Month</LabelText>
         <StyledInput name={month} errorText={errorText} type="number" />
       </Label>
-      <Label className="year">
+      <Label>
         <LabelText>Year</LabelText>
         <StyledInput name={year} errorText={errorText} type="number" />
       </Label>
