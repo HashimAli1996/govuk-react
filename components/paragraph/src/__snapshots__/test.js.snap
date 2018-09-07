@@ -66,6 +66,7 @@ exports[`Styled matches wrapper snapshot 1`] = `
 <Styled(Paragraph)>
   <Paragraph
     className="emotion-2"
+    linkRenderer={[Function]}
     supportingText={false}
   >
     <Styled(ReactMarkdown)
@@ -81,6 +82,7 @@ exports[`Styled matches wrapper snapshot 1`] = `
       }
       className="emotion-2"
       escapeHtml={false}
+      linkRenderer={[Function]}
       renderers={
         Object {
           "link": [Function],
@@ -104,6 +106,7 @@ exports[`Styled matches wrapper snapshot 1`] = `
         astPlugins={Array []}
         className="emotion-0"
         escapeHtml={false}
+        linkRenderer={[Function]}
         plugins={Array []}
         rawSourcePos={false}
         renderers={
