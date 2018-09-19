@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
-.emotion-29 {
+.emotion-20 {
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width:641px) {
-  .emotion-29 {
+  .emotion-20 {
     margin-bottom: 30px;
   }
 }
 
-.emotion-28 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,7 +26,7 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .emotion-28 {
+  .emotion-19 {
     margin-bottom: 30px;
   }
 }
@@ -96,7 +96,7 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
   }
 }
 
-.emotion-27 {
+.emotion-18 {
   font-family: "nta",Arial,sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -104,17 +104,17 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
   display: flex;
 }
 
-.emotion-27 > label {
+.emotion-18 > label {
   width: 50px;
   margin-right: 20px;
   margin-bottom: 0;
 }
 
-.emotion-27 > label.year {
+.emotion-18 > label.year {
   width: 70px;
 }
 
-.emotion-10 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,19 +126,19 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-10:after {
+.emotion-7:after {
   content: '';
   display: table;
   clear: both;
 }
 
 @media only screen and (min-width:641px) {
-  .emotion-10 {
+  .emotion-7 {
     margin-bottom: 0;
   }
 }
 
-.emotion-9 {
+.emotion-6 {
   box-sizing: border-box;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -154,223 +154,268 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .emotion-9 {
+  .emotion-6 {
     font-size: 19px;
     line-height: 1.3;
   }
 }
 
-.emotion-9:focus {
+.emotion-6:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
-<Styled(DateInput)
+<Styled(MultiInputInput)
   errorText="example"
-  inputNames={
-    Object {
-      "day": "dayInputName",
-    }
-  }
 >
-  <DateInput
-    className="emotion-29"
-    defaultValues={
-      Object {
-        "defaultDay": undefined,
-        "defaultMonth": undefined,
-        "defaultYear": undefined,
-      }
-    }
+  <MultiInputInput
+    className="emotion-20"
     errorText="example"
-    inputNames={
-      Object {
-        "day": "dayInputName",
-      }
-    }
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value={Object {}}
   >
-    <Styled(div)
-      className="emotion-29"
+    <DateInput
+      className="emotion-20"
+      defaultValues={
+        Object {
+          "day": undefined,
+          "month": undefined,
+          "year": undefined,
+        }
+      }
       errorText="example"
+      input={
+        Object {
+          "onBlur": [Function],
+          "onChange": [Function],
+          "onFocus": [Function],
+          "value": undefined,
+        }
+      }
+      inputNames={
+        Object {
+          "day": undefined,
+          "month": undefined,
+          "year": undefined,
+        }
+      }
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      refs={[Function]}
+      value={Object {}}
     >
-      <div
-        className="emotion-28"
+      <Styled(div)
+        className="emotion-20"
+        errorText="example"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        refs={[Function]}
+        value={Object {}}
       >
-        <Styled(LabelText)
-          errorText="example"
+        <div
+          className="emotion-19"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          value={Object {}}
         >
-          <LabelText
-            className="emotion-1"
+          <Styled(LabelText)
             errorText="example"
           >
-            <Styled(span)
+            <LabelText
               className="emotion-1"
               errorText="example"
             >
-              <span
-                className="emotion-0"
+              <Styled(span)
+                className="emotion-1"
+                errorText="example"
               >
-                example
-              </span>
-            </Styled(span)>
-          </LabelText>
-        </Styled(LabelText)>
-        <span />
-        <Styled(ErrorText)
-          errorText="example"
-        >
-          <ErrorText
-            className="emotion-1"
+                <span
+                  className="emotion-0"
+                >
+                  example
+                </span>
+              </Styled(span)>
+            </LabelText>
+          </Styled(LabelText)>
+          <span />
+          <Styled(ErrorText)
             errorText="example"
           >
-            <Styled(span)
+            <ErrorText
               className="emotion-1"
               errorText="example"
             >
-              <span
-                className="emotion-3"
+              <Styled(span)
+                className="emotion-1"
+                errorText="example"
               >
-                example
-              </span>
-            </Styled(span)>
-          </ErrorText>
-        </Styled(ErrorText)>
-        <Styled(div)>
-          <div
-            className="emotion-27"
+                <span
+                  className="emotion-3"
+                >
+                  example
+                </span>
+              </Styled(span)>
+            </ErrorText>
+          </Styled(ErrorText)>
+          <MultiInputInput
+            defaultValues={
+              Object {
+                "day": undefined,
+                "month": undefined,
+                "year": undefined,
+              }
+            }
+            error={true}
+            names={
+              Object {
+                "day": undefined,
+                "month": undefined,
+                "year": undefined,
+              }
+            }
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            value={Object {}}
           >
-            <Styled(Label)>
-              <Label
-                className="emotion-1"
-              >
-                <Styled(label)
-                  className="emotion-1"
-                >
-                  <label
-                    className="emotion-10"
-                  >
-                    <Styled(LabelText)>
-                      <LabelText
-                        className="emotion-1"
-                      >
-                        <Styled(span)
-                          className="emotion-1"
-                        >
-                          <span
-                            className="emotion-0"
-                          >
-                            Day
-                          </span>
-                        </Styled(span)>
-                      </LabelText>
-                    </Styled(LabelText)>
-                    <Styled(input)
-                      defaultValue=""
-                      errorText="example"
-                      name="dayInputName"
-                      type="text"
-                    >
-                      <input
-                        className="emotion-9"
-                        defaultValue=""
-                        name="dayInputName"
-                        type="text"
-                      />
-                    </Styled(input)>
-                  </label>
-                </Styled(label)>
-              </Label>
-            </Styled(Label)>
-            <Styled(Label)>
-              <Label
-                className="emotion-1"
-              >
-                <Styled(label)
-                  className="emotion-1"
-                >
-                  <label
-                    className="emotion-10"
-                  >
-                    <Styled(LabelText)>
-                      <LabelText
-                        className="emotion-1"
-                      >
-                        <Styled(span)
-                          className="emotion-1"
-                        >
-                          <span
-                            className="emotion-0"
-                          >
-                            Month
-                          </span>
-                        </Styled(span)>
-                      </LabelText>
-                    </Styled(LabelText)>
-                    <Styled(input)
-                      defaultValue=""
-                      errorText="example"
-                      name="dateInputMonth"
-                      type="text"
-                    >
-                      <input
-                        className="emotion-9"
-                        defaultValue=""
-                        name="dateInputMonth"
-                        type="text"
-                      />
-                    </Styled(input)>
-                  </label>
-                </Styled(label)>
-              </Label>
-            </Styled(Label)>
-            <Styled(Label)
-              className="year"
+            <OptionalDateInput
+              defaultValues={
+                Object {
+                  "day": undefined,
+                  "month": undefined,
+                  "year": undefined,
+                }
+              }
+              error={true}
+              labels={
+                Object {
+                  "day": "Day",
+                  "month": "Month",
+                  "year": "Year",
+                }
+              }
+              names={
+                Object {
+                  "day": undefined,
+                  "month": undefined,
+                  "year": undefined,
+                }
+              }
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              refs={[Function]}
+              value={Object {}}
             >
-              <Label
-                className="year emotion-1"
-              >
-                <Styled(label)
-                  className="year emotion-1"
+              <Styled(div)>
+                <div
+                  className="emotion-18"
                 >
-                  <label
-                    className="year emotion-10"
-                  >
-                    <Styled(LabelText)>
-                      <LabelText
+                  <Styled(Label)>
+                    <Label
+                      className="emotion-1"
+                    >
+                      <Styled(label)
                         className="emotion-1"
                       >
-                        <Styled(span)
-                          className="emotion-1"
+                        <label
+                          className="emotion-7"
                         >
-                          <span
-                            className="emotion-0"
+                          Day
+                          :
+                          <Styled(input)
+                            error={true}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            type="text"
                           >
-                            Year
-                          </span>
-                        </Styled(span)>
-                      </LabelText>
-                    </Styled(LabelText)>
-                    <Styled(input)
-                      defaultValue=""
-                      errorText="example"
-                      name="dateInputYear"
-                      type="text"
+                            <input
+                              className="emotion-6"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              type="text"
+                            />
+                          </Styled(input)>
+                        </label>
+                      </Styled(label)>
+                    </Label>
+                  </Styled(Label)>
+                  <Styled(Label)>
+                    <Label
+                      className="emotion-1"
                     >
-                      <input
-                        className="emotion-9"
-                        defaultValue=""
-                        name="dateInputYear"
-                        type="text"
-                      />
-                    </Styled(input)>
-                  </label>
-                </Styled(label)>
-              </Label>
-            </Styled(Label)>
-          </div>
-        </Styled(div)>
-      </div>
-    </Styled(div)>
-  </DateInput>
-</Styled(DateInput)>
+                      <Styled(label)
+                        className="emotion-1"
+                      >
+                        <label
+                          className="emotion-7"
+                        >
+                          Month
+                          :
+                          <Styled(input)
+                            error={true}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            type="text"
+                          >
+                            <input
+                              className="emotion-6"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              type="text"
+                            />
+                          </Styled(input)>
+                        </label>
+                      </Styled(label)>
+                    </Label>
+                  </Styled(Label)>
+                  <Styled(Label)>
+                    <Label
+                      className="emotion-1"
+                    >
+                      <Styled(label)
+                        className="emotion-1"
+                      >
+                        <label
+                          className="emotion-7"
+                        >
+                          Year
+                          :
+                          <Styled(input)
+                            error={true}
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            type="text"
+                          >
+                            <input
+                              className="emotion-6"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              type="text"
+                            />
+                          </Styled(input)>
+                        </label>
+                      </Styled(label)>
+                    </Label>
+                  </Styled(Label)>
+                </div>
+              </Styled(div)>
+            </OptionalDateInput>
+          </MultiInputInput>
+        </div>
+      </Styled(div)>
+    </DateInput>
+  </MultiInputInput>
+</Styled(MultiInputInput)>
 `;
