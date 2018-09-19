@@ -1,21 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import { BLACK, YELLOW, ERROR_COLOUR } from 'govuk-colours';
-import {
-  FONT_SIZE,
-  LINE_HEIGHT,
-  MEDIA_QUERIES,
-  NTA_LIGHT,
-  SPACING,
-} from '@govuk-react/constants';
-import Label from '@govuk-react/label';
+import { ERROR_COLOUR } from 'govuk-colours';
+import { SPACING } from '@govuk-react/constants';
 import LabelText from '@govuk-react/label-text';
 import ErrorText from '@govuk-react/error-text';
 import HintText from '@govuk-react/hint-text';
 import { withWhiteSpace } from '@govuk-react/hoc';
 
 import multiInputInput from 'multi-input-input';
+
+import Input from './input';
 
 const StyledContainer = styled('div')(
   {
@@ -28,46 +23,6 @@ const StyledContainer = styled('div')(
     paddingLeft: errorText ? SPACING.SCALE_2 : undefined,
   }),
 );
-
-const StyledInput = styled('input')(
-  {
-    boxSizing: 'border-box',
-    fontFamily: NTA_LIGHT,
-    WebkitFontSmoothing: 'antialiased',
-    MozOsxFontSmoothing: 'grayscale',
-    fontWeight: 400,
-    textTransform: 'none',
-    fontSize: FONT_SIZE.SIZE_16,
-    lineHeight: LINE_HEIGHT.SIZE_16,
-    [MEDIA_QUERIES.LARGESCREEN]: {
-      fontSize: FONT_SIZE.SIZE_19,
-      lineHeight: LINE_HEIGHT.SIZE_19,
-    },
-    width: '100%',
-    padding: '5px 4px 4px',
-    border: `2px solid ${BLACK}`,
-    ':focus': {
-      outline: `3px solid ${YELLOW}`,
-      outlineOffset: 0,
-    },
-  },
-  ({ errorText }) => ({
-    border: errorText ? `4px solid ${ERROR_COLOUR}` : `2px solid ${BLACK}`,
-  }),
-);
-
-const StyledList = styled('div')({
-  fontFamily: NTA_LIGHT,
-  display: 'flex',
-  '> label': {
-    width: '50px',
-    marginRight: '20px',
-    marginBottom: 0,
-  },
-  '> label.year': {
-    width: '70px',
-  },
-});
 
 /**
  *
@@ -110,16 +65,8 @@ const DateInput = ({
   children,
   errorText,
   hintText,
-  inputNames: {
-    day = 'dateInputDay',
-    month = 'dateInputMonth',
-    year = 'dateInputYear',
-  },
-  defaultValues: {
-    defaultDay = '',
-    defaultMonth = '',
-    defaultYear = '',
-  },
+  inputNames,
+  defaultValues,
   ...props
 }) => (
   <StyledContainer {...props} errorText={errorText}>
@@ -130,20 +77,7 @@ const DateInput = ({
     ) : (
       <span />
       )}
-    <StyledList>
-      <Label>
-        <LabelText>Day</LabelText>
-        <StyledInput name={day} errorText={errorText} type="text" defaultValue={defaultDay} />
-      </Label>
-      <Label>
-        <LabelText>Month</LabelText>
-        <StyledInput name={month} errorText={errorText} type="text" defaultValue={defaultMonth} />
-      </Label>
-      <Label className="year">
-        <LabelText>Year</LabelText>
-        <StyledInput name={year} errorText={errorText} type="text" defaultValue={defaultYear} />
-      </Label>
-    </StyledList>
+    <Input names={inputNames} defaultValues={defaultValues} />
   </StyledContainer>
 );
 
@@ -201,9 +135,12 @@ DateInput.propTypes = {
   /**
    * Called when the day, month or year fields are blurred
    * (does not get called when moving between inputs in the same datefield)
-   * @type {[type]}
    */
   onBlur: PropTypes.func,
+  /**
+   * Called when the day, month or year fields are focussed
+   * (does not get called when moving between inputs in the same datefield)
+   */
   onFocus: PropTypes.func,
 };
 
