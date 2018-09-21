@@ -30,38 +30,38 @@ const StyledContainer = styled('div')(
  *
  * Simple
  * ```jsx
- * <DateInput>What is your date of birth?</DateInput>
+ * <DateField>What is your date of birth?</DateField>
  * ```
  *
  * Date with hint text
  * ```jsx
- * <DateInput hintText="For example, 31 03 1980">
+ * <DateField hintText="For example, 31 03 1980">
  *   What is your date of birth?
- * </DateInput>
+ * </DateField>
  * ```
  *
  * Date with hint text & error
  * ```jsx
- * <DateInput
+ * <DateField
  *   hintText="For example, 31 03 1980"
  *   errorText="Error message goes here"
  * >
  *   What is your date of birth?
- * </DateInput>
+ * </DateField>
  * ```
  *
  * With custom input name props
  * ```jsx
- * <DateInput inputNames={{ day: 'dayInputName' }} hintText="For example, 31 03 1980">
+ * <DateField inputNames={{ day: 'dayInputName' }} hintText="For example, 31 03 1980">
  *   What is your date of birth?
- * </DateInput>
+ * </DateField>
  * ```
  *
  * ### References:
  * - https://github.com/alphagov/govuk-frontend/tree/master/src/components/date-input
  *
  */
-const DateInput = ({
+const DateField = ({
   children,
   errorText,
   hintText,
@@ -89,7 +89,7 @@ const DateInput = ({
   </StyledContainer>
 );
 
-DateInput.defaultProps = {
+DateField.defaultProps = {
   hintText: undefined,
   errorText: undefined,
   inputNames: {
@@ -111,7 +111,7 @@ DateInput.defaultProps = {
   },
 };
 
-DateInput.propTypes = {
+DateField.propTypes = {
   children: PropTypes.node.isRequired,
   /**
    * Optional hint text
@@ -161,4 +161,4 @@ DateInput.propTypes = {
   }),
 };
 
-export default withWhiteSpace({ marginBottom: 6 })(multiInputInput(DateInput));
+export default withWhiteSpace({ marginBottom: 6 })(multiInputInput(DateField));

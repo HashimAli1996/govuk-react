@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
+exports[`DateField matches wrappersnapshot: wrapper mount 1`] = `
 .emotion-20 {
   margin-bottom: 20px;
 }
@@ -176,7 +176,7 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
     onFocus={[Function]}
     value={Object {}}
   >
-    <DateInput
+    <DateField
       className="emotion-20"
       defaultValues={
         Object {
@@ -283,7 +283,7 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
             onFocus={[Function]}
             value={Object {}}
           >
-            <OptionalDateInput
+            <OptionalDateField
               defaultValues={
                 Object {
                   "day": undefined,
@@ -411,11 +411,11 @@ exports[`DateInput matches wrappersnapshot: wrapper mount 1`] = `
                   </Styled(Label)>
                 </div>
               </Styled(div)>
-            </OptionalDateInput>
+            </OptionalDateField>
           </MultiInputInput>
         </div>
       </Styled(div)>
-    </DateInput>
+    </DateField>
   </MultiInputInput>
 </Styled(MultiInputInput)>
 `;
