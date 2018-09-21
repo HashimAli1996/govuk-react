@@ -487,7 +487,6 @@ exports[`error summary matches the ErrorSummary snapshot: error summary 1`] = `
             >
               <Paragraph
                 className="emotion-6"
-                linkRenderer={[Function]}
                 mb={3}
                 supportingText={false}
               >
@@ -504,7 +503,6 @@ exports[`error summary matches the ErrorSummary snapshot: error summary 1`] = `
                   }
                   className="emotion-6"
                   escapeHtml={false}
-                  linkRenderer={[Function]}
                   mb={3}
                   renderers={
                     Object {
@@ -529,7 +527,6 @@ exports[`error summary matches the ErrorSummary snapshot: error summary 1`] = `
                     astPlugins={Array []}
                     className="emotion-4"
                     escapeHtml={false}
-                    linkRenderer={[Function]}
                     mb={3}
                     plugins={Array []}
                     rawSourcePos={false}

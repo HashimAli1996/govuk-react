@@ -221,7 +221,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                 >
                   <Paragraph
                     className="emotion-4"
-                    linkRenderer={[Function]}
                     supportingText={false}
                   >
                     <Styled(ReactMarkdown)
@@ -237,7 +236,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                       }
                       className="emotion-4"
                       escapeHtml={false}
-                      linkRenderer={[Function]}
                       renderers={
                         Object {
                           "link": [Function],
@@ -261,7 +259,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                         astPlugins={Array []}
                         className="emotion-2"
                         escapeHtml={false}
-                        linkRenderer={[Function]}
                         plugins={Array []}
                         rawSourcePos={false}
                         renderers={
@@ -295,7 +292,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                 >
                   <Paragraph
                     className="emotion-8"
-                    linkRenderer={[Function]}
                     mb={0}
                     supportingText={false}
                   >
@@ -312,7 +308,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                       }
                       className="emotion-8"
                       escapeHtml={false}
-                      linkRenderer={[Function]}
                       mb={0}
                       renderers={
                         Object {
@@ -337,7 +332,6 @@ exports[`hidden text matches the HiddenText snapshot: hidden text 1`] = `
                         astPlugins={Array []}
                         className="emotion-6"
                         escapeHtml={false}
-                        linkRenderer={[Function]}
                         mb={0}
                         plugins={Array []}
                         rawSourcePos={false}
