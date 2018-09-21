@@ -8,8 +8,6 @@ import ErrorText from '@govuk-react/error-text';
 import HintText from '@govuk-react/hint-text';
 import { withWhiteSpace } from '@govuk-react/hoc';
 
-import multiInputInput from 'multi-input-input';
-
 import Input from './input';
 
 const StyledContainer = styled('div')(
@@ -129,10 +127,6 @@ DateField.propTypes = {
     year: PropTypes.any,
   },
   /**
-   * This comes from the multiInputInput HOC
-   */
-  refs: PropTypes.func.isRequired,
-  /**
    * Properties that are sent to the input, matching final form input type
    */
   input: PropTypes.shape({
@@ -161,4 +155,4 @@ DateField.propTypes = {
   }),
 };
 
-export default withWhiteSpace({ marginBottom: 6 })(multiInputInput(DateField));
+export default withWhiteSpace({ marginBottom: 6 })(DateField);
