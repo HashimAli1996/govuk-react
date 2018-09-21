@@ -58,7 +58,7 @@ const StyledContainer = styled('div')(
  * ```
  *
  * ### References:
- * - https://github.com/alphagov/govuk-frontend/tree/master/src/components/date-input
+ * - https://github.com/alphagov/govuk-frontend/tree/master/src/components/date-field
  *
  */
 const DateField = ({
