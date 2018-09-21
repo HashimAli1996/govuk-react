@@ -102,13 +102,7 @@ DateField.defaultProps = {
     month: undefined,
     year: undefined,
   },
-  refs: () => null,
-  input: {
-    onChange: () => null,
-    onBlur: () => null,
-    onFocus: () => null,
-    value: undefined,
-  },
+  input: undefined,
 };
 
 DateField.propTypes = {
@@ -134,7 +128,13 @@ DateField.propTypes = {
     month: PropTypes.any,
     year: PropTypes.any,
   },
-  refs: PropTypes.func,
+  /**
+   * This comes from the multiInputInput HOC
+   */
+  refs: PropTypes.func.isRequired,
+  /**
+   * Properties that are sent to the input, matching final form input type
+   */
   input: PropTypes.shape({
     /**
      * Called when the day, month or year changes
